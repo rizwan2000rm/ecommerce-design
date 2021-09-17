@@ -1,0 +1,38 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    height: 100%;
+
+    .sidebar-toggle {
+      border-right: 1px solid #eee;
+      width: 75px;
+      height: 100%;
+      padding: 0 15px;
+    }
+
+    .logo {
+      border-right: 1px solid #eee;
+      width: 75px;
+      height: 100%;
+      padding: 0 15px;
+
+      img {
+        height: 30px;
+      }
+    }
+  }
+
+  .nav-right {
+    flex-grow: 3;
+    border-bottom: 1px solid #eee;
+    height: 100%;
+  }
+}

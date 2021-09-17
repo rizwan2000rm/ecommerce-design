@@ -1,0 +1,71 @@
+//* GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Staatliches&display=swap");
+
+:root {
+  //* colors
+  --white: #ffffff;
+  --off-white: #fdfbf9;
+  --black: #000000;
+  --green-light: #eef5dc;
+  --green-dark: #ced274;
+  //* font size for rems units
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr minmax(150px, 25%);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+// utils classes
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: Staatliches;
+  height: 100%;
+  padding: 0 15px;
+
+  .nav-item {
+    height: 100%;
+    padding: 0 15px;
+
+    &:hover {
+      opacity: 0.8;
+      background: var(--off-white);
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid red;
+  }
+}

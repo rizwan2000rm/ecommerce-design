@@ -1,0 +1,76 @@
+.hero {
+  // max-width: 80vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .hero-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .product {
+      flex-grow: 1;
+    }
+
+    .heading {
+      font-size: 3rem;
+      font-family: Staatliches;
+      text-transform: uppercase;
+      margin-right: 40px;
+    }
+
+    .extra-products {
+      flex-grow: 2;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 100px;
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .card {
+        max-width: 250px;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        background: var(--white);
+        padding: 20px;
+        box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+        overflow: hidden;
+        border-radius: 20px;
+
+        .card-details {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .card-image {
+          width: 150px;
+          transform: scale(1.5) translateX(20%);
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    width: 500px;
+    border-radius: 50%;
+    background: var(--green-light);
+    z-index: -1;
+
+    img {
+      transform: scale(1.4) translateX(-30px);
+    }
+  }
+}
