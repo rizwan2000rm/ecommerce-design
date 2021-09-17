@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap");
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--off-white);
+  position: relative;
+
+  .secondary-nav {
+    height: 80px;
+
+    .nav-item:hover {
+      background: var(--white);
+    }
+  }
+
+  .content {
+    flex-grow: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .content-text {
+      position: absolute;
+      left: -100px;
+      transform: rotate(90deg);
+      white-space: nowrap;
+      font-size: 5rem;
+      font-family: "Londrina Shadow", cursive;
+    }
+
+    .content-item {
+      width: 70%;
+
+      img {
+        height: 80vh;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: calc(50% - 64px);
+    left: -36px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+}

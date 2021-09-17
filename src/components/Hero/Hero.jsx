@@ -2,6 +2,7 @@ import React from "react";
 import { PlusCircle } from "phosphor-react";
 import modelImg from "../../assets/model.png";
 import bagImg from "../../assets/bag.png";
+import shoesImg from "../../assets/shoes.png";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
             <div>V-Neck Shirt</div>
           </div>
           <div className="floating-button">
-            <PlusCircle size={48} weight="fill" />
+            <PlusCircle size={64} weight="fill" />
           </div>
         </div>
         <div className="extra-products">
@@ -36,8 +37,8 @@ const Hero = () => {
                 <div className="card-title">Half Dome Poolover</div>
                 <div className="card-price">$87</div>
               </div>
-              <div className="card-image">
-                <img src={bagImg} alt="" />
+              <div className="card-image shoes">
+                <img src={shoesImg} alt="" />
               </div>
             </div>
           </div>

@@ -11,21 +11,22 @@
     align-items: center;
 
     .product {
-      flex-grow: 1;
+      flex-grow: 2;
     }
 
     .heading {
-      font-size: 3rem;
+      font-size: 5rem;
       font-family: Staatliches;
       text-transform: uppercase;
-      margin-right: 40px;
+      margin-right: 100px;
     }
 
     .extra-products {
       flex-grow: 2;
       display: flex;
-      justify-content: flex-end;
-      margin-right: 100px;
+      margin-left: 100px;
+      justify-content: center;
+      // margin-right: 100px;
 
       .cards {
         display: flex;
@@ -54,6 +55,11 @@
         .card-image {
           width: 150px;
           transform: scale(1.5) translateX(20%);
+        }
+
+        .shoes {
+          width: 150px;
+          transform: scale(2.2) translateX(20%);
         }
       }
     }
