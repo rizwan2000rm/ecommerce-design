@@ -22,7 +22,7 @@ const Navbar = () => {
           <img src={logoUrl} alt="" />
         </Link>
         <div className="nav">
-          {["New", "Sale", "Man", "Women"].map((navItem, idx) => (
+          {["New", "Sale", "Men", "Women"].map((navItem, idx) => (
             <div
               className={`nav-item center ${idx === activeId && "active"}`}
               onClick={() => setActiveId(idx)}
