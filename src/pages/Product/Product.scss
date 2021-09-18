@@ -1,0 +1,27 @@
+.product {
+  position: relative;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+
+  .product-details {
+    flex-grow: 2;
+
+    .product-title {
+      font-size: 5rem;
+      font-family: Staatliches;
+      text-transform: uppercase;
+    }
+  }
+
+  .product-image {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: var(--green-light);
+
+    img {
+      transform: scale(1.4) translateX(-30px);
+    }
+  }
+}

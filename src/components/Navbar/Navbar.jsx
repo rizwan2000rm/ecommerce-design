@@ -1,11 +1,16 @@
 import React from "react";
 import { List, HeartStraight } from "phosphor-react";
 import logoUrl from "../../Logo.svg";
+import { motion } from "framer-motion";
 import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <motion.nav
+      className="navbar"
+      layoutId="transition-navbar"
+      transition={{ duration: 0.8 }}
+    >
       <div className="nav-left">
         <div className="sidebar-toggle center">
           <List size={24} />
@@ -28,7 +33,7 @@ const Navbar = () => {
           <div className="nav-item center">Search</div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

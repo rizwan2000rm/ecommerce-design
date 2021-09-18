@@ -1,25 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { PlusCircle } from "phosphor-react";
 import modelImg from "../../assets/model.png";
 import bagImg from "../../assets/bag.png";
 import shoesImg from "../../assets/shoes.png";
+import { motion, AnimatePresence } from "framer-motion";
 import "./Hero.scss";
 
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero-image">
-        <img src={modelImg} alt="model" />
-      </div>
       <div className="hero-details">
         <div className="product center">
           <div className="heading">
             Tied Green
             <div>V-Neck Shirt</div>
           </div>
-          <div className="floating-button">
+          <Link to="/product" className="floating-button">
             <PlusCircle size={64} weight="fill" />
-          </div>
+          </Link>
         </div>
         <div className="extra-products">
           <div className="cards">
@@ -44,6 +43,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <motion.div className="hero-image" layoutId="transition-image">
+        <img src={modelImg} alt="model" />
+      </motion.div>
     </div>
   );
 };

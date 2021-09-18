@@ -29,25 +29,14 @@ img {
   max-width: 100%;
 }
 
-.App {
-  display: grid;
-  grid-template-columns: 1fr 400px;
-}
-
-.layout {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  border-right: 1px solid #eee;
-}
-
-// utils classes
+// utils classes => should be in a partial _utils.scss file
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+// common css should be in a partial _common.scss file
 .nav {
   display: flex;
   align-items: center;

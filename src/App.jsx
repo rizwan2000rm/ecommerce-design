@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import RightSidebar from "./components/RightSidebar/RightSidebar";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Product from "./pages/Product/Product";
+import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import "./App.scss";
 
 function App() {
@@ -9,11 +10,18 @@ function App() {
 
   return (
     <div className="App">
-      <div className="layout">
-        <Navbar />
-        <Hero />
-      </div>
-      <RightSidebar />
+      <AnimateSharedLayout>
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/product">
+              <Product />
+            </Route>
+          </Switch>
+        </Router>
+      </AnimateSharedLayout>
     </div>
   );
 }
