@@ -11,16 +11,18 @@ function App() {
   return (
     <div className="App">
       <AnimateSharedLayout>
-        <Router>
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/product">
-              <Product />
-            </Route>
-          </Switch>
-        </Router>
+        <AnimatePresence>
+          <Router>
+            <Switch>
+              <Route path="/" exact>
+                <Home />
+              </Route>
+              <Route path="/product">
+                <Product />
+              </Route>
+            </Switch>
+          </Router>
+        </AnimatePresence>
       </AnimateSharedLayout>
     </div>
   );

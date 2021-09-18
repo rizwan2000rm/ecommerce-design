@@ -16,6 +16,11 @@
       width: 75px;
       height: 100%;
       padding: 0 15px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     .logo {
@@ -23,6 +28,11 @@
       width: 75px;
       height: 100%;
       padding: 0 15px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
 
       img {
         height: 30px;

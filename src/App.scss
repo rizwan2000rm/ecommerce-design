@@ -1,5 +1,5 @@
 //* GOOGLE FONTS
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Staatliches&display=swap");
 
 :root {
   //* colors
@@ -41,13 +41,13 @@ img {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-family: Staatliches;
   height: 100%;
   padding: 0 15px;
 
   .nav-item {
     height: 100%;
     padding: 0 15px;
+    font-family: Staatliches;
 
     &:hover {
       opacity: 0.8;

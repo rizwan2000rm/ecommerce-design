@@ -1,5 +1,4 @@
 .hero {
-  // max-width: 80vw;
   height: calc(100vh - 80px);
   display: flex;
   align-items: center;
@@ -18,7 +17,7 @@
     img {
       width: 500px;
       height: 500px;
-      transform: scale(1.4) translateX(-30px);
+      transform: scale(1.4) translateY(-30px);
     }
   }
 
@@ -39,7 +38,7 @@
     }
 
     .floating-button {
-      color: var(--green-dark);
+      color: var(--black);
 
       &:hover {
         opacity: 0.8;
@@ -51,7 +50,6 @@
       display: flex;
       margin-left: 100px;
       justify-content: center;
-      // margin-right: 100px;
 
       .cards {
         display: flex;

@@ -1,11 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { ShoppingBag, User, CaretCircleRight } from "phosphor-react";
 import modelImg from "../../assets/model-sidebar.jpg";
 import "./RightSidebar.scss";
 
 const RightSidebar = () => {
   return (
-    <div className="right-sidebar">
+    <motion.div
+      className="right-sidebar"
+      initial={false}
+      key="right-sidebar"
+      initial={{ opacity: 0, x: 400 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 400 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="secondary-nav">
         <div className="nav center">
           <div className="nav-item center">
@@ -22,8 +32,10 @@ const RightSidebar = () => {
           <img src={modelImg} alt="model" />
         </div>
       </div>
-      <CaretCircleRight className="close-btn" size={64} weight="thin" />
-    </div>
+      <Link to="/product" className="close-btn">
+        <CaretCircleRight size={64} weight="thin" />
+      </Link>
+    </motion.div>
   );
 };
 
