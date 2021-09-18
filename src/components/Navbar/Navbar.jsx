@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import Nav from "../Nav/Nav";
+import { motion } from "framer-motion";
 import { List, HeartStraight } from "phosphor-react";
 import logoUrl from "../../Logo.svg";
-import { motion } from "framer-motion";
 import "./Navbar.scss";
 
 const Navbar = () => {
-  const [activeId, setActiveId] = useState(3);
-
   return (
     <motion.nav
       className="navbar"
@@ -21,19 +20,7 @@ const Navbar = () => {
         <Link to="" className="logo center">
           <img src={logoUrl} alt="" />
         </Link>
-        <div className="nav">
-          {["New", "Sale", "Men", "Women"].map((navItem, idx) => (
-            <div
-              className={`nav-item center ${idx === activeId && "active"}`}
-              onClick={() => setActiveId(idx)}
-            >
-              {navItem}
-            </div>
-          ))}
-          {/* <div className="nav-item center">Sale</div>
-          <div className="nav-item center">Man</div>
-          <div className="nav-item center active">Women</div> */}
-        </div>
+        <Nav array={["New", "Sale", "Men", "Women"]} />
       </div>
       <div className="nav-right center">
         <div className="nav">

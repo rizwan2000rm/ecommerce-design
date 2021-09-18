@@ -9,7 +9,6 @@ const RightSidebar = () => {
   return (
     <motion.div
       className="right-sidebar"
-      initial={false}
       key="right-sidebar"
       initial={{ opacity: 0, x: 400 }}
       animate={{ opacity: 1, x: 0 }}

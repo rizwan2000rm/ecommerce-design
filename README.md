@@ -12,10 +12,10 @@ A Custom E-commerce Animated Design 🔥
 
 <br/>
 
-[![License](https://img.shields.io/github/license/rizwan2000rm/ecommerce-design.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
-[![Issues](https://img.shields.io/github/issues/rizwan2000rm/ecommerce-design.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
-[![Stars](https://img.shields.io/github/stars/rizwan2000rm/ecommerce-design.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
-[![Forks](https://img.shields.io/github/forks/rizwan2000rm/ecommerce-design.svg?style=for-the-badge)](https://github.com/grtcdr/startpages)
+[![License](https://img.shields.io/github/license/rizwan2000rm/ecommerce-design?style=for-the-badge)](https://github.com/grtcdr/startpages)
+[![Issues](https://img.shields.io/github/issues/rizwan2000rm/ecommerce-design?style=for-the-badge)](https://github.com/grtcdr/startpages)
+[![Stars](https://img.shields.io/github/stars/rizwan2000rm/ecommerce-design?style=for-the-badge)](https://github.com/grtcdr/startpages)
+[![Forks](https://img.shields.io/github/forks/rizwan2000rm/ecommerce-design?style=for-the-badge)](https://github.com/grtcdr/startpages)
 
 </div>
 

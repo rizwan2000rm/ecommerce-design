@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "../Card/Card";
 import { PlusCircle } from "phosphor-react";
 import modelImg from "../../assets/model.png";
 import bagImg from "../../assets/bag.png";
@@ -56,24 +57,8 @@ const Hero = () => {
         </div>
         <div className="extra-products">
           <motion.div className="cards" variants={item}>
-            <div className="card">
-              <div className="card-details">
-                <div className="card-title">Half Dome Poolover</div>
-                <div className="card-price">$87</div>
-              </div>
-              <div className="card-image">
-                <img src={bagImg} alt="" />
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-details">
-                <div className="card-title">Half Dome Poolover</div>
-                <div className="card-price">$87</div>
-              </div>
-              <div className="card-image shoes">
-                <img src={shoesImg} alt="" />
-              </div>
-            </div>
+            <Card title="Half Dome Poolover" price="$87" imageUrl={bagImg} />
+            <Card title="Half Dome Poolover" price="$87" imageUrl={shoesImg} />
           </motion.div>
         </div>
       </motion.div>

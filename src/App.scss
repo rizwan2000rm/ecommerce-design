@@ -35,27 +35,3 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-// common css should be in a partial _common.scss file
-.nav {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  height: 100%;
-  padding: 0 15px;
-
-  .nav-item {
-    height: 100%;
-    padding: 0 15px;
-    font-family: Staatliches;
-
-    &:hover {
-      opacity: 0.8;
-      background: var(--off-white);
-    }
-  }
-
-  .active {
-    border-bottom: 2px solid red;
-  }
-}
